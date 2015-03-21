@@ -7,7 +7,7 @@ The latest dataset is downloaded from [USGS](http://earthquake.usgs.gov/earthqua
 
 The world map is from the 'rworldmap' package.
 
-Browse the [slidify slides](https://github.com/p2rk2h/DevDataProd_Project1/index.html) for details and sample screen captures.
+Browse [slidify slides](http://rpubs.com/p2rk2h/66588) for details and sample screen captures in *index.md*.
 
 Johns Hopkins Coursera 2015 March
 
