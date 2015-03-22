@@ -63,21 +63,14 @@ img {
 
 <div id="developing-data-products-project---earthquake-event-visualization" class="section level1">
 <h1>Developing Data Products Project - Earthquake Event Visualization</h1>
-<p>This Shiny App<sup>1</sup> interactively displays the earthquake events of the last 7 days on world map for given date and magnitude range.</p>
+<p>This <a href="https://p2rk2h.shinyapps.io/DevDataProd_Project1/">Shiny App</a><sup>1</sup> interactively displays the earthquake events of the last 7 days on world map for given date and magnitude range.</p>
 <p>The latest dataset is downloaded from <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/">USGS</a> real-time feeds for plotting each event centered on its epicenter with a circle of radius and color proportional to earthquake magnitude.</p>
 <p>The world map is from the ‘rworldmap’ package.</p>
 <p>Browse <a href="http://rpubs.com/p2rk2h/66588">slidify slides</a> for details and sample screen captures in <em>index.md</em>.</p>
 <p>Johns Hopkins Coursera 2015 March</p>
 <p><br> </br></p>
 <p><strong>Footnote:</strong></p>
-<p><sup>1</sup> <strong>WARNING:</strong> A peculiar web <em>“ERROR: ‘from’ must be finite”</em> results when instantiating the published <a href="https://p2rk2h.shinyapps.io/DevDataProd_Project1/">shinyapps.io</a>. This despite the Shiny App’s</p>
-<ul>
-<li>running correctly from the R Studios in both the MAC OS X and the Windows,</li>
-<li>having successfully published to the shinyapps.io web site, and</li>
-<li>shinyapps.io account in the <em>Running</em> status.</li>
-</ul>
-<p>I’ve searched internet to resolve this puzzling error in vain. Would appreciate learning the root cause and its proper resolution of this web-instantiation error from Coursera faculty, staff, or reviewers.</p>
-<p>To run this app locally on R Studio, download relevant files from <a href="https://github.com/p2rk2h/DevDataProd_Project1/">GitHub</a></p>
+<p><sup>1</sup> Set <em><a href="http://stackoverflow.com/questions/20577764/set-locale-to-system-default-utf-8">Sys.setlocale( category = ‘LC_ALL’ , locale = ‘C’ )</a></em> if code contains <em>as.Date( )</em>. Even though app instantiation works locally without setting any <em>locale</em>, shinyapps.io web instantiation currently results in a cryptic <em>“ERROR: ‘from’ must be finite”</em> (see <a href="https://groups.google.com/forum/#!topic/shinyapps-users/VHKCz5B0QfE">forum</a>).</p>
 </div>
 
 

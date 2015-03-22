@@ -3,6 +3,7 @@ library( rworldmap )
 library( mapproj )
 library( ggplot2 )
 
+Sys.setlocale( category = 'LC_ALL' , locale = 'C' )	# for shinyapps.io
 rthC <- rev( heat.colors( 8 ) )	# color scale for mag 0 - 7+
 
 readUsgsCsv <- function( x ) {	# load last 7-day data from all_week.csv

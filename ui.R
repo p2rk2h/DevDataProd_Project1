@@ -1,4 +1,7 @@
 library( shiny )	# ui.R
+library( markdown )	# for shinyapps.io
+Sys.setlocale( category = 'LC_ALL' , locale = 'C' )	# for shinyapps.io
+
 	dt7 <- rev( seq( as.Date( date( ) , '%A %B %d %H:%M:%S %Y' ) , length = 7 , by = - 1 ) )	# date range
 	mg7 <- seq( 0 , 8 )	# mag range
 	drng <- paste( c( as.character( dt7[ 1 ] ) , ' - ' , as.character( dt7[ 7 ] ) ) , sep = '' )
